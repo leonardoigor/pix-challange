@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SharedLibrary/1.0.0": {
+        "dependencies": {
+          "Sentry.Serilog": "3.40.1"
+        },
+        "runtime": {
+          "SharedLibrary.dll": {}
+        }
+      },
+      "Sentry/3.40.1": {
+        "runtime": {
+          "lib/net6.0/Sentry.dll": {
+            "assemblyVersion": "3.40.1.0",
+            "fileVersion": "3.40.1.0"
+          }
+        }
+      },
+      "Sentry.Serilog/3.40.1": {
+        "dependencies": {
+          "Sentry": "3.40.1",
+          "Serilog": "2.10.0"
+        },
+        "runtime": {
+          "lib/net6.0/Sentry.Serilog.dll": {
+            "assemblyVersion": "3.40.1.0",
+            "fileVersion": "3.40.1.0"
+          }
+        }
+      },
+      "Serilog/2.10.0": {
+        "runtime": {
+          "lib/netstandard2.1/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.10.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharedLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentry/3.40.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nJMHkilHQnElxUDyUwf1yrF17mNh068TrkkvZ5ffEr6zu0c+v2sHv9oXecnpGmE+Pv5m1txLZtfQ5cYh38yR2g==",
+      "path": "sentry/3.40.1",
+      "hashPath": "sentry.3.40.1.nupkg.sha512"
+    },
+    "Sentry.Serilog/3.40.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-791oekcwADzUCNSFo4B2enKCWBO9kTDPb9LhvUnVTkfUkwRuvxBkYrrDWZrAIGyOr9rXI8Tm2XaA0AkxfRw6rw==",
+      "path": "sentry.serilog/3.40.1",
+      "hashPath": "sentry.serilog.3.40.1.nupkg.sha512"
+    },
+    "Serilog/2.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+QX0hmf37a0/OZLxM3wL7V6/ADvC1XihXN4Kq/p6d8lCPfgkRdiuhbWlMaFjR9Av0dy5F0+MBeDmDdRZN/YwQA==",
+      "path": "serilog/2.10.0",
+      "hashPath": "serilog.2.10.0.nupkg.sha512"
+    }
+  }
+}

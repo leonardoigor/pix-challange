@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3zGR4xevvEoGK09uc7YOe9m6npFnTxrbQuyuvWu5O0isaE2ZUVevuoE44DNOblULqkEy+im2somWme8wWq/MJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\igor_\\OneDrive\\Documents\\Projects\\c#\\Pix challenge\\SharedLibrary\\SharedLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igor_\\.nuget\\packages\\sentry\\3.40.1\\sentry.3.40.1.nupkg.sha512",
+    "C:\\Users\\igor_\\.nuget\\packages\\sentry.serilog\\3.40.1\\sentry.serilog.3.40.1.nupkg.sha512",
+    "C:\\Users\\igor_\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512"
+  ],
+  "logs": []
+}

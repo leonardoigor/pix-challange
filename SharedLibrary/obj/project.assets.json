@@ -1,0 +1,212 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Sentry/3.40.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Sentry.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Sentry.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Sentry.targets": {}
+        }
+      },
+      "Sentry.Serilog/3.40.1": {
+        "type": "package",
+        "dependencies": {
+          "Sentry": "3.40.1",
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net6.0/Sentry.Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Sentry.Serilog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Serilog/2.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sentry/3.40.1": {
+      "sha512": "nJMHkilHQnElxUDyUwf1yrF17mNh068TrkkvZ5ffEr6zu0c+v2sHv9oXecnpGmE+Pv5m1txLZtfQ5cYh38yR2g==",
+      "type": "package",
+      "path": "sentry/3.40.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Sentry.targets",
+        "buildTransitive/Sentry.targets",
+        "lib/net461/Sentry.dll",
+        "lib/net461/Sentry.xml",
+        "lib/net5.0/Sentry.dll",
+        "lib/net5.0/Sentry.xml",
+        "lib/net6.0-android31.0/Sentry.dll",
+        "lib/net6.0-android31.0/Sentry.xml",
+        "lib/net6.0-ios16.1/Sentry.dll",
+        "lib/net6.0-ios16.1/Sentry.xml",
+        "lib/net6.0-maccatalyst16.1/Sentry.dll",
+        "lib/net6.0-maccatalyst16.1/Sentry.xml",
+        "lib/net6.0/Sentry.dll",
+        "lib/net6.0/Sentry.xml",
+        "lib/netcoreapp3.0/Sentry.dll",
+        "lib/netcoreapp3.0/Sentry.xml",
+        "lib/netstandard2.0/Sentry.dll",
+        "lib/netstandard2.0/Sentry.xml",
+        "lib/netstandard2.1/Sentry.dll",
+        "lib/netstandard2.1/Sentry.xml",
+        "sentry-nuget.png",
+        "sentry.3.40.1.nupkg.sha512",
+        "sentry.nuspec",
+        "tools/sentry-cli-Darwin-arm64",
+        "tools/sentry-cli-Darwin-x86_64",
+        "tools/sentry-cli-Linux-aarch64",
+        "tools/sentry-cli-Linux-i686",
+        "tools/sentry-cli-Linux-x86_64",
+        "tools/sentry-cli-Windows-i686.exe",
+        "tools/sentry-cli-Windows-x86_64.exe"
+      ]
+    },
+    "Sentry.Serilog/3.40.1": {
+      "sha512": "791oekcwADzUCNSFo4B2enKCWBO9kTDPb9LhvUnVTkfUkwRuvxBkYrrDWZrAIGyOr9rXI8Tm2XaA0AkxfRw6rw==",
+      "type": "package",
+      "path": "sentry.serilog/3.40.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Sentry.Serilog.dll",
+        "lib/net461/Sentry.Serilog.xml",
+        "lib/net5.0/Sentry.Serilog.dll",
+        "lib/net5.0/Sentry.Serilog.xml",
+        "lib/net6.0/Sentry.Serilog.dll",
+        "lib/net6.0/Sentry.Serilog.xml",
+        "lib/netstandard2.0/Sentry.Serilog.dll",
+        "lib/netstandard2.0/Sentry.Serilog.xml",
+        "lib/netstandard2.1/Sentry.Serilog.dll",
+        "lib/netstandard2.1/Sentry.Serilog.xml",
+        "sentry-nuget.png",
+        "sentry.serilog.3.40.1.nupkg.sha512",
+        "sentry.serilog.nuspec"
+      ]
+    },
+    "Serilog/2.10.0": {
+      "sha512": "+QX0hmf37a0/OZLxM3wL7V6/ADvC1XihXN4Kq/p6d8lCPfgkRdiuhbWlMaFjR9Av0dy5F0+MBeDmDdRZN/YwQA==",
+      "type": "package",
+      "path": "serilog/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "lib/netstandard2.1/Serilog.dll",
+        "lib/netstandard2.1/Serilog.xml",
+        "serilog.2.10.0.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Sentry.Serilog >= 3.40.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\igor_\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\igor_\\OneDrive\\Documents\\Projects\\c#\\Pix challenge\\SharedLibrary\\SharedLibrary.csproj",
+      "projectName": "SharedLibrary",
+      "projectPath": "C:\\Users\\igor_\\OneDrive\\Documents\\Projects\\c#\\Pix challenge\\SharedLibrary\\SharedLibrary.csproj",
+      "packagesPath": "C:\\Users\\igor_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\igor_\\OneDrive\\Documents\\Projects\\c#\\Pix challenge\\SharedLibrary\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\igor_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Sentry.Serilog": {
+            "target": "Package",
+            "version": "[3.40.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

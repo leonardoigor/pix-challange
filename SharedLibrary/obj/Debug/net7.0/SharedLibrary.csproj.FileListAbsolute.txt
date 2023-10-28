@@ -1,0 +1,13 @@
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\bin\Debug\net7.0\SharedLibrary.deps.json
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\bin\Debug\net7.0\SharedLibrary.dll
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\bin\Debug\net7.0\SharedLibrary.pdb
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.AssemblyReference.cache
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\Sentry.Attributes.cs
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfoInputs.cache
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfo.cs
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.CoreCompileInputs.cache
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.dll
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\refint\SharedLibrary.dll
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\SharedLibrary.pdb
+C:\Users\igor_\OneDrive\Documents\Projects\c#\Pix challenge\SharedLibrary\obj\Debug\net7.0\ref\SharedLibrary.dll
