@@ -16,5 +16,9 @@ namespace Api.Infra.Conntexts
         }
  
         public DbSet<User> User { get; set; }
+
+
+
+
     }
 }

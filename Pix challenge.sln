@@ -7,6 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{0A2E7D
 	ProjectSection(SolutionItems) = preProject
 		connection.udl = connection.udl
 		docker-compose.yaml = docker-compose.yaml
+		SqlServer\Dockerfile = SqlServer\Dockerfile
+		SqlServer\entrypoint.sh = SqlServer\entrypoint.sh
+		initDb.sql = initDb.sql
+		SqlServer\initDb.sql = SqlServer\initDb.sql
+		SqlServer\run-initialization.sh = SqlServer\run-initialization.sh
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{51E75FEE-B595-482F-A0F0-0DBF3C2FFB44}"

@@ -1,0 +1,968 @@
+2023-10-28 18:58:18.099 -03:00 [INF] Dependencies starteds
+2023-10-28 18:58:21.614 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 18:58:21.624 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 18:58:21.627 -03:00 [INF] Hosting environment: Development
+2023-10-28 18:58:21.629 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 18:58:22.301 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger - -
+2023-10-28 18:58:22.474 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger - - - 301 0 - 175.0418ms
+2023-10-28 18:58:22.485 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 18:58:22.863 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-bundle.js - -
+2023-10-28 18:58:22.864 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 378.0508ms
+2023-10-28 18:58:22.864 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui.css - -
+2023-10-28 18:58:22.877 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-standalone-preset.js - -
+2023-10-28 18:58:22.929 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-28 18:58:22.929 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-28 18:58:22.929 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-28 18:58:23.009 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 134.5718ms
+2023-10-28 18:58:23.011 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 148.2052ms
+2023-10-28 18:58:23.014 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui.css - - - 200 144929 text/css 149.6958ms
+2023-10-28 18:58:23.015 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 18:58:23.016 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 18:58:23.028 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 12.2563ms
+2023-10-28 18:58:23.104 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.5093ms
+2023-10-28 18:58:23.534 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 18:58:23.555 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/favicon-32x32.png - -
+2023-10-28 18:58:23.759 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-28 18:58:23.764 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/favicon-32x32.png - - - 200 628 image/png 209.5589ms
+2023-10-28 18:58:23.935 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 400.1084ms
+2023-10-28 18:58:39.641 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 18:58:39.697 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 18:58:39.702 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 18:58:39.718 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 18:58:42.777 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 3052.3378ms
+2023-10-28 18:58:42.818 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 18:58:43.048 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:1d6ce80f-af26-416c-9725-c1b9ba842f97
+Error Number:18456,State:1,Class:14
+2023-10-28 18:58:43.122 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 3480.5672ms
+2023-10-28 19:01:35.102 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:01:35.107 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:01:35.108 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:01:35.909 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 799.5345ms
+2023-10-28 19:01:35.943 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:01:36.028 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at InvokeStub_BaseRepository`2..ctor(Object, Object, IntPtr*)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:70e371b4-00bf-4ac9-80c1-b9843d76fbc0
+Error Number:18456,State:1,Class:14
+2023-10-28 19:01:36.096 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 994.6808ms
+2023-10-28 19:03:17.777 -03:00 [INF] Dependencies starteds
+2023-10-28 19:03:17.858 -03:00 [ERR] An unhandled exception occurred.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Program.cs:line 28
+2023-10-28 19:11:20.321 -03:00 [INF] Dependencies starteds
+2023-10-28 19:11:20.988 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:11:20.997 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:11:21.000 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:11:21.002 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:11:21.689 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:11:22.002 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 317.9279ms
+2023-10-28 19:11:22.083 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:11:22.084 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:11:22.093 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 8.7869ms
+2023-10-28 19:11:22.108 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6888ms
+2023-10-28 19:11:22.596 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:11:22.760 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.4303ms
+2023-10-28 19:11:25.408 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:11:25.434 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:11:25.439 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:11:25.452 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:11:27.464 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 2001.0851ms
+2023-10-28 19:11:27.507 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:11:27.646 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:9d69af19-5b57-4833-87f0-17dd13c1d32b
+Error Number:18456,State:1,Class:14
+2023-10-28 19:11:27.705 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 2296.0628ms
+2023-10-28 19:11:51.100 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:11:51.116 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:11:51.119 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:11:51.906 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 784.2811ms
+2023-10-28 19:11:51.950 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:11:52.031 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at InvokeStub_BaseRepository`2..ctor(Object, Object, IntPtr*)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:29e32585-6f08-40c1-bab4-c8e819093b67
+Error Number:18456,State:1,Class:14
+2023-10-28 19:11:52.097 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 996.9448ms
+2023-10-28 19:11:56.504 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:11:56.506 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:11:56.508 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:11:56.941 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 429.4216ms
+2023-10-28 19:11:56.978 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:11:57.063 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at InvokeStub_BaseRepository`2..ctor(Object, Object, IntPtr*)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:29e32585-6f08-40c1-bab4-c8e819093b67
+Error Number:18456,State:1,Class:14
+2023-10-28 19:11:57.136 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 631.3129ms
+2023-10-28 19:13:01.391 -03:00 [INF] Dependencies starteds
+2023-10-28 19:13:01.469 -03:00 [ERR] An unhandled exception occurred.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Program.cs:line 28
+2023-10-28 19:16:12.140 -03:00 [INF] Dependencies starteds
+2023-10-28 19:16:12.217 -03:00 [ERR] An unhandled exception occurred.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Program.cs:line 28
+2023-10-28 19:16:26.263 -03:00 [INF] Dependencies starteds
+2023-10-28 19:16:26.342 -03:00 [ERR] An unhandled exception occurred.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Program.cs:line 28
+2023-10-28 19:17:18.651 -03:00 [INF] Dependencies starteds
+2023-10-28 19:17:19.428 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:17:19.437 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:17:19.439 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:17:19.442 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:17:20.262 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:17:20.615 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:17:20.620 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 361.5543ms
+2023-10-28 19:17:20.630 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 14.4975ms
+2023-10-28 19:17:20.655 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-standalone-preset.js - -
+2023-10-28 19:17:20.665 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-bundle.js - -
+2023-10-28 19:17:20.668 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:17:20.669 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 0.7954ms
+2023-10-28 19:17:20.700 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-28 19:17:20.700 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-28 19:17:20.702 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:17:20.703 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 48.6272ms
+2023-10-28 19:17:20.706 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 40.8164ms
+2023-10-28 19:17:20.722 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.1246ms
+2023-10-28 19:17:21.039 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:17:21.218 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 179.0376ms
+2023-10-28 19:17:22.251 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:17:22.264 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.7226ms
+2023-10-28 19:17:24.917 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:17:24.939 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:17:24.945 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:17:24.964 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:17:26.939 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 1968.3242ms
+2023-10-28 19:17:26.977 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:17:27.099 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:15d97c00-ae92-4c3d-a3da-f332a59b8aa8
+Error Number:18456,State:1,Class:14
+2023-10-28 19:17:27.164 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 2247.2371ms
+2023-10-28 19:18:26.416 -03:00 [INF] Dependencies starteds
+2023-10-28 19:18:27.518 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:18:27.527 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:18:27.531 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:18:27.544 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:18:28.067 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:18:28.394 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:18:28.396 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 330.4847ms
+2023-10-28 19:18:28.403 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 8.9516ms
+2023-10-28 19:18:28.474 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:18:28.506 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.0578ms
+2023-10-28 19:18:28.850 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:18:29.059 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.0584ms
+2023-10-28 19:18:38.888 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:18:38.915 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:18:38.920 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:18:38.935 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:19:16.180 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 37237.9861ms
+2023-10-28 19:19:16.217 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:19:16.343 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:fa18ee65-b4bc-4305-abe4-b766cc3a5ac9
+Error Number:18456,State:1,Class:14
+2023-10-28 19:19:16.445 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 37555.9218ms
+2023-10-28 19:26:32.848 -03:00 [INF] Dependencies starteds
+2023-10-28 19:26:33.697 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:26:33.706 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:26:33.708 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:26:33.711 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:26:34.640 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:26:34.966 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 327.9386ms
+2023-10-28 19:26:35.118 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:26:35.134 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:26:35.228 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 109.9632ms
+2023-10-28 19:26:35.317 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.2935ms
+2023-10-28 19:26:35.651 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:26:35.858 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.8290ms
+2023-10-28 19:26:38.331 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:26:38.357 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:26:38.362 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:26:38.379 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:26:42.902 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 4513.83ms
+2023-10-28 19:26:42.942 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:26:43.082 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:c94f43f3-10ab-47be-bf00-29d7c5915738
+Error Number:18456,State:1,Class:14
+2023-10-28 19:26:43.146 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 4815.0570ms
+2023-10-28 19:27:31.128 -03:00 [INF] Dependencies starteds
+2023-10-28 19:27:32.430 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:27:32.440 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:27:32.444 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:27:32.447 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:27:32.968 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:27:33.358 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 363.8499ms
+2023-10-28 19:27:33.424 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:27:33.450 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:27:33.455 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 4.9403ms
+2023-10-28 19:27:33.467 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.5135ms
+2023-10-28 19:27:33.814 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:27:34.028 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.3708ms
+2023-10-28 19:27:36.945 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:27:36.968 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:27:36.976 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:27:36.993 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:27:52.457 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 15455.5938ms
+2023-10-28 19:27:52.510 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:27:52.643 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:072c9d0b-2e7b-4c6a-8b9f-3d2d6ae1001a
+Error Number:18456,State:1,Class:14
+2023-10-28 19:27:52.709 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 15763.2256ms
+2023-10-28 19:28:06.968 -03:00 [INF] Dependencies starteds
+2023-10-28 19:28:07.728 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:28:07.737 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:28:07.739 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:28:07.741 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:28:08.261 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:28:08.631 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 372.8359ms
+2023-10-28 19:28:08.714 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:28:08.716 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:28:08.727 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 12.9585ms
+2023-10-28 19:28:08.745 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.1916ms
+2023-10-28 19:28:09.054 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:28:09.238 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 183.3578ms
+2023-10-28 19:28:10.145 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:28:10.147 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:28:10.147 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 2.1688ms
+2023-10-28 19:28:10.164 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.9663ms
+2023-10-28 19:28:11.943 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:28:11.977 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:28:11.982 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:28:11.998 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:31:04.340 -03:00 [INF] Dependencies starteds
+2023-10-28 19:31:05.054 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:31:05.063 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:31:05.065 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:31:05.067 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:31:05.715 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:31:06.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 425.1563ms
+2023-10-28 19:31:06.244 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:31:06.244 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:31:06.469 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 224.3818ms
+2023-10-28 19:31:06.493 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 248.9474ms
+2023-10-28 19:31:06.824 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:31:07.031 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 207.2681ms
+2023-10-28 19:32:18.896 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:32:18.937 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:32:18.946 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:32:18.976 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:32:43.893 -03:00 [INF] Dependencies starteds
+2023-10-28 19:32:44.993 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:32:45.006 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:32:45.009 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:32:45.012 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:32:45.868 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:32:46.188 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 321.6223ms
+2023-10-28 19:32:46.277 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:32:46.282 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:32:46.290 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 12.1115ms
+2023-10-28 19:32:46.313 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.4641ms
+2023-10-28 19:32:46.670 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:32:46.869 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 199.7740ms
+2023-10-28 19:32:48.727 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:32:48.758 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:32:48.768 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:32:48.790 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:33:13.020 -03:00 [INF] Dependencies starteds
+2023-10-28 19:33:14.063 -03:00 [INF] Now listening on: http://localhost:5034
+2023-10-28 19:33:14.072 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 19:33:14.074 -03:00 [INF] Hosting environment: Development
+2023-10-28 19:33:14.078 -03:00 [INF] Content root path: C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api
+2023-10-28 19:33:14.461 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/index.html - -
+2023-10-28 19:33:14.814 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/index.html - - - 200 - text/html;charset=utf-8 359.0447ms
+2023-10-28 19:33:14.890 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:33:14.890 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:33:14.914 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 24.2453ms
+2023-10-28 19:33:14.952 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.3749ms
+2023-10-28 19:33:14.980 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - -
+2023-10-28 19:33:14.982 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/_vs/browserLink - -
+2023-10-28 19:33:14.984 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 3.0390ms
+2023-10-28 19:33:14.995 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.9070ms
+2023-10-28 19:33:15.280 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - -
+2023-10-28 19:33:15.548 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 268.2035ms
+2023-10-28 19:33:17.412 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:33:17.444 -03:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 19:33:17.449 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:33:17.464 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:33:21.741 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 4270.9167ms
+2023-10-28 19:33:21.782 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:33:21.908 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:2deab7fe-4723-4029-8cc9-69da6590852f
+Error Number:18456,State:1,Class:14
+2023-10-28 19:33:21.976 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 4564.3796ms
+2023-10-28 19:35:09.412 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5034/api/User - -
+2023-10-28 19:35:09.414 -03:00 [INF] Executing endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:35:09.415 -03:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller Api.Controllers.UserController (Api).
+2023-10-28 19:35:12.699 -03:00 [INF] Executed action Api.Controllers.UserController.Get (Api) in 3281.8439ms
+2023-10-28 19:35:12.744 -03:00 [INF] Executed endpoint 'Api.Controllers.UserController.Get (Api)'
+2023-10-28 19:35:13.017 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Falha de logon do usuário 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass60_0.<UsingConnection>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Common.DbProviderServices.CreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateDatabase()
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update()
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Database.Initialize(Boolean force)
+   at Api.Repository.Base.BaseRepository`2..ctor(DbContext ctx) in C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\Repository\Base\BaseRepository.cs:line 14
+   at InvokeStub_BaseRepository`2..ctor(Object, Object, IntPtr*)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:ba39206f-de8b-412d-b689-e033f621cd99
+Error Number:18456,State:1,Class:14
+2023-10-28 19:35:13.113 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5034/api/User - - - 500 - text/plain;+charset=utf-8 3701.2738ms

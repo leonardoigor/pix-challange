@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fw/HEAeQoOa4Qm1RylNBQLCuZydSP9kISz2menLKp3ni2AFNbAmBgtdKwQPIOGZj7+3tQkcrHFew0ybQYAvfdA==",
+  "dgSpecHash": "nHiOcQbg+r86Wcrbj3Pm4Gq/RZ4lVJSGWmPbeKRG7gTe6vXfBOu2il6F1yVG6SAL0KVR3UhbwmwaMB3BKQqUnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\igor_\\OneDrive\\Documents\\Projects\\c#\\Pix challenge\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\igor_\\OneDrive\\Documents\\DEV\\pix-challange\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\igor_\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\igor_\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
