@@ -1,18 +1,25 @@
 ﻿using Api.Infra.Conntexts;
 using Api.Repository.Base;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
-using System.Data.Entity;
 
 namespace Api.Core
 {
     public static class DI
     {
-        public static IServiceCollection DependencyInjection(this IServiceCollection service)
+        public static IServiceCollection DependencyInjection(this IServiceCollection service, ConfigurationManager Configuration)
         {
             Log.Information("Dependencies starteds");
+            var env = Configuration.GetSection("Env");
+            var conString = env.GetValue<string>("ConnectionString");
+            Log.Information(conString);
+            service.AddDbContext<PixContext>(op =>
+            {
+
+                op.UseSqlServer(conString);
+            });
             service.AddSingleton<IServiceCollection>(service);
-            service.AddScoped<DbContext, DbContext1>();
+            //  service.AddScoped<DbContext, PixContext>();
             service.AddTransient(typeof(BaseRepository<,>));
 
             return service;

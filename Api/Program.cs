@@ -1,6 +1,5 @@
 using Api.Core;
 using Serilog;
-using System.Data.Entity;
 
 internal class Program
 {
@@ -18,15 +17,16 @@ internal class Program
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.DependencyInjection();
+            builder.Services.DependencyInjection(builder.Configuration);
             builder.Services.Configure<Env>(builder.Configuration.GetSection("Env"));
+            builder.Services.AddHostedService<ImpactTransactionService>();
 
             builder.Services.AddLogging(loggingBuilder =>
             {
                 loggingBuilder.AddSerilog();
             });
             var app = builder.Build();
-            Database.SetInitializer(new CreateDatabaseIfNotExists<DbContext>());
+            //Database.SetInitializer(new CreateDatabaseIfNotExists<DbContext>());
 
 
             if (app.Environment.IsDevelopment())

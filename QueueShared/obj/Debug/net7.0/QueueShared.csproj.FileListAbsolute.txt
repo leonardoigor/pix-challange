@@ -1,0 +1,12 @@
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.csproj.AssemblyReference.cache
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.AssemblyInfoInputs.cache
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.AssemblyInfo.cs
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.csproj.CoreCompileInputs.cache
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\bin\Debug\net7.0\QueueShared.deps.json
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\bin\Debug\net7.0\QueueShared.dll
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\bin\Debug\net7.0\QueueShared.pdb
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.dll
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\refint\QueueShared.dll
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\QueueShared.pdb
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\QueueShared\obj\Debug\net7.0\ref\QueueShared.dll

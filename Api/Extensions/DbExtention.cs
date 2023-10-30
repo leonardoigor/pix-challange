@@ -1,9 +1,7 @@
-﻿using Api.Infra.Conntexts;
-
-namespace Api.Extensions
+﻿namespace Api.Extensions
 {
-    public static  class DbExtention
+    public static class DbExtention
     {
- 
+
     }
 }

@@ -12,31 +12,45 @@ namespace Api.Controllers
     {
         public BaseRepository<User, Guid> BaseRepository { get; }
 
-        public UserController(BaseRepository<User,Guid> baseRepository)
+        public UserController(BaseRepository<User, Guid> baseRepository)
         {
             BaseRepository = baseRepository;
-            var b = baseRepository.Get().ToList();
-            var c = 1;
+
         }
 
         // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            return BaseRepository.Get().ToList();
         }
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User? Get(Guid id)
         {
-            return "value";
+            return BaseRepository.GetById(id).FirstOrDefault();
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public User Post([FromBody] User entity)
         {
+            using (var transaction = BaseRepository.BeginTransaction(true))
+            {
+                try
+                {
+                    entity = BaseRepository.Add(entity);
+                    BaseRepository.SaveChanges();
+                    transaction.Commit();
+                }
+                catch (Exception)
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+            }
+            return entity;
         }
 
         // PUT api/<UserController>/5

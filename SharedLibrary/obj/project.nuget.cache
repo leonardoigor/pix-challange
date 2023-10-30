@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "bB+6fJvyZzQMjnORbqe9YLzsaYUjMtbsJfAjHPLBX2ECy33MFq8rZBkoej15DUX9KftQOTu65bxahISRShlVZQ==",
+  "dgSpecHash": "gwN7/Sg7f6UzUWTJ+l24LzBKvS63s7rsMspD3vw1Xp2YxCocN7olDnWhCCbB0lgqiDE0rXusLGTwGX6CYG2esQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\igor_\\OneDrive\\Documents\\DEV\\pix-challange\\SharedLibrary\\SharedLibrary.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\igor_\\.nuget\\packages\\rabbitmq.client\\6.6.0\\rabbitmq.client.6.6.0.nupkg.sha512",
     "C:\\Users\\igor_\\.nuget\\packages\\sentry\\3.40.1\\sentry.3.40.1.nupkg.sha512",
     "C:\\Users\\igor_\\.nuget\\packages\\sentry.serilog\\3.40.1\\sentry.serilog.3.40.1.nupkg.sha512",
-    "C:\\Users\\igor_\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512"
+    "C:\\Users\\igor_\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\igor_\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\igor_\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -531,15 +531,11 @@ C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\bin\Debug\net7.0\runtime
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\bin\Debug\net7.0\SharedLibrary.dll
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\bin\Debug\net7.0\SharedLibrary.pdb
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.csproj.AssemblyReference.cache
-C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.Migrations.init.resources
-C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.Migrations.setup_.resources
-C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.csproj.GenerateResource.cache
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Sentry.Attributes.cs
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.AssemblyInfoInputs.cache
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.AssemblyInfo.cs
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.csproj.CoreCompileInputs.cache
-C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\staticwebassets\msbuild.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\staticwebassets\msbuild.build.Api.props
@@ -555,3 +551,6 @@ C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\refint\
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.pdb
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\Api.genruntimeconfig.cache
 C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\obj\Debug\net7.0\ref\Api.dll
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\bin\Debug\net7.0\QueueShared.dll
+C:\Users\igor_\OneDrive\Documents\DEV\pix-challange\Api\bin\Debug\net7.0\QueueShared.pdb

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6U0vp6wiFPyMUSCSHci9SHbY8slrMUl9Qiv3SSFenI9i9xg4a/gbTKUw+wB9i1wRdXNjlzNO2dUCOnzd9lsgFg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\igor_\\OneDrive\\Documents\\DEV\\pix-challange\\QueueShared\\QueueShared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igor_\\.nuget\\packages\\rabbitmq.client\\6.6.0\\rabbitmq.client.6.6.0.nupkg.sha512",
+    "C:\\Users\\igor_\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\igor_\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
